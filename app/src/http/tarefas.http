@@ -1,0 +1,28 @@
+@baseUrl = https://8080-calil05-atividade01apij-wot5kt8km3e.ws-us115.gitpod.io/
+
+###
+GET {{baseUrl}}/tarefas
+
+###
+GET {{baseUrl}}/tarefas/3
+
+###
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Limpar Privadas",
+    "concluida": false
+}
+
+###
+PUT {{baseUrl}}/tarefas/2
+Content-Type: application/json
+
+{
+    "descricao": "Fritar Batata",
+    "concluida": false
+}
+
+###
+DELETE {{baseUrl}}/tarefas/3
